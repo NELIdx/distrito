@@ -73,5 +73,7 @@ nav a.activo {
 }
 .mapa-embed {
     max-width: 100%;
+    width: 75%;
+    height: 300px;
     border-radius: 7px;
 }
