@@ -53,3 +53,21 @@ nav a.activo {
         display: none;
     }
 }
+.logo-nav {
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.foto-actividades {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
+    display: block;
+}
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
