@@ -1,19 +1,19 @@
 body {
     font-family: times new roman, sans-serif;
     color: #0c0b0b;
-    background-color: #efe4e4;
+    background-color: #f4f6f8;
 }
 
 h1 {
-    color: #0e0e0e;
+    color: #4005bf;
 }
 
 h2 {
-    color: #6594d1;
+    color: #141619;
 }
 
 nav {
-    background-color: #1ccefa;
+    background-color: #3311ae;
     padding: 10px;
 }
 
@@ -34,7 +34,7 @@ p {
 }
 nav a.activo {
     text-decoration: underline;
-    color: #ffe9a8;
+    color: #d2d6dc;
 }
 @media (max-width: 600px) {
     nav a {
