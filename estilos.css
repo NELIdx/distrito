@@ -1,19 +1,27 @@
 body {
-    font-family: times new roman, sans-serif;
+    font-family: 'arial', sans-serif;
     color: #0c0b0b;
-    background-color: #f4f6f8;
+    background-color: #FFFFFF
+;
 }
 
 h1 {
+    font-family: 'arial', sans-serif;
     color: #4005bf;
 }
 
 h2 {
-    color: #141619;
+    font-family: 'Baguet Script', sans-serif;
+    color: #1768e2;
+}
+
+h3 {
+    font-family: 'Baguet Script', sans-serif;
+     font-weight: 600;
 }
 
 nav {
-    background-color: #3311ae;
+    background-color: #4313e2;
     padding: 10px;
 }
 
@@ -34,7 +42,7 @@ p {
 }
 nav a.activo {
     text-decoration: underline;
-    color: #d2d6dc;
+    color: #ffffff;
 }
 @media (max-width: 600px) {
     nav a {
@@ -76,4 +84,32 @@ nav a.activo {
     width: 100%;
     height: 300px;
     border-radius: 7px;
+}
+.letrero {
+    border: 3px solid #1a4d8f;
+    border-radius: 10px;
+    padding: 10px 25px;
+    display: table;
+    text-align: center;
+    margin: 0 auto 15px auto;
+}
+
+.flecha {
+    text-align: center;
+    font-size: 28px;
+    color: #1a4d8f;
+    margin: 5px 0 15px 0;
+}
+.parrafo {
+    border: 3px solid #1a4d8f;
+    border-radius: 10px;
+    padding: 10px 25px;
+    display: table;
+    text-align: center;
+    margin: 0 auto 15px auto;
+}
+ul {
+    font-family: 'arial', sans-serif;
+        text-align: left;
+
 }
