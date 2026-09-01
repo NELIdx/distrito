@@ -60,6 +60,18 @@ nav a.activo {
         .separador {
         display: none;
     }
+     .menu-boton {
+        display: inline-block;
+    }
+
+    .menu-enlaces {
+        display: none;
+        width: 100%;
+    }
+
+    .menu-enlaces.abierto {
+        display: block;
+    }
 }
 .logo-nav {
     height: 40px;
@@ -112,4 +124,14 @@ ul {
     font-family: 'arial', sans-serif;
         text-align: left;
 
+}
+.menu-boton {
+    display: none;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    font-size: 24px;
+    padding: 5px 12px;
+    border-radius: 5px;
+    cursor: pointer;
 }
