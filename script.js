@@ -13,3 +13,10 @@ enlaces.forEach(function (enlace) {
         enlace.classList.add("activo");
     }
 });
+
+const boton = document.getElementById("menu-toggle");
+const menu = document.getElementById("menu-enlaces");
+
+boton.addEventListener("click", function () {
+    menu.classList.toggle("abierto");
+});

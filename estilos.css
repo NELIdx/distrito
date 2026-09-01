@@ -44,6 +44,16 @@ nav a.activo {
     text-decoration: underline;
     color: #ffffff;
 }
+.menu-boton {
+    display: none;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    font-size: 24px;
+    padding: 5px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 @media (max-width: 600px) {
     nav a {
         display: block;
@@ -124,14 +134,4 @@ ul {
     font-family: 'arial', sans-serif;
         text-align: left;
 
-}
-.menu-boton {
-    display: none;
-    background: none;
-    border: 2px solid white;
-    color: white;
-    font-size: 24px;
-    padding: 5px 12px;
-    border-radius: 5px;
-    cursor: pointer;
 }
