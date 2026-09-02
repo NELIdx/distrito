@@ -89,8 +89,16 @@ nav a.activo {
     margin-right: 15px;
 }
 .foto-actividades {
-    max-width: 100%;
-    width: 30%;
+    max-width: 30%;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
+    display: block;
+
+}.imagen-juegos  {
+    max-width: 50%;
+    width: 50%;
     height: auto;
     border-radius: 8px;
     margin: 15px 0;
