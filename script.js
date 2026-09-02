@@ -20,3 +20,17 @@ const menu = document.getElementById("menu-enlaces");
 boton.addEventListener("click", function () {
     menu.classList.toggle("abierto");
 });
+const fotos = document.querySelectorAll(".foto-actividades");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+
+fotos.forEach(function (foto) {
+    foto.addEventListener("click", function () {
+        lightboxImg.src = foto.src;
+        lightbox.classList.add("abierto");
+    });
+});
+
+lightbox.addEventListener("click", function () {
+    lightbox.classList.remove("abierto");
+});
