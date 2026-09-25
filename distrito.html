@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav>
-    <img src="imagenes/logo.png" alt="Logo del Distrito Escolar 16-01-0923" class="logo-nav">
+    <img src="imagenes/logo-mineduc.png" alt="Logo del Ministerio de Educación y del Distrito Escolar 16-01-0923" class="logo-nav">
         <button id="menu-toggle" class="menu-boton" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-enlaces">☰</button>
     <div id="menu-enlaces" class="menu-enlaces">
     <a href="index.html">Inicio</a> <span class="separador">|</span>
@@ -18,23 +18,45 @@
     <a href="actividades.html">Actividades</a>
     </div>
     </nav>
-<main class="contenedor">
-    <h1>Distrito Escolar 16-01-0923</h1>
-    <p>La Coordinación Distrital SINAE 16-01-0923 trabaja con las comunidades educativas de Cobán, Alta Verapaz.</p>
+<main class="contenedor pagina-distrito">
+    <header class="encabezado-distrito">
+        <span class="etiqueta-distrito">Coordinación Distrital SINAE</span>
+        <h1>Distrito Escolar 16-01-0923</h1>
+        <p>La Coordinación Distrital SINAE 16-01-0923 trabaja con las comunidades educativas de Cobán, Alta Verapaz.</p>
+    </header>
 
-    <h2>Propósito del SINAE</h2>
-    <p class="justificado">El Sistema Nacional de Acompañamiento Educativo apoya a los centros educativos mediante la coordinación distrital y el acompañamiento pedagógico y de gestión, para contribuir a mejorar la calidad educativa.</p>
-    <p class="fuente">Fuente: <a href="https://edu.mineduc.gob.gt/digeduca/documents/investigaciones/2025/CompendioBID.pdf" target="_blank" rel="noopener noreferrer">Evaluación del SINAE, MINEDUC</a>.</p>
+    <section class="proposito-distrito" aria-labelledby="titulo-proposito">
+        <h2 id="titulo-proposito">Propósito del SINAE</h2>
+        <p class="justificado">El Sistema Nacional de Acompañamiento Educativo apoya a los centros educativos mediante la coordinación distrital y el acompañamiento pedagógico y de gestión, para contribuir a mejorar la calidad educativa.</p>
+        <p class="fuente">Fuente: <a href="https://edu.mineduc.gob.gt/digeduca/documents/investigaciones/2025/CompendioBID.pdf" target="_blank" rel="noopener noreferrer">Evaluación del SINAE, MINEDUC</a>.</p>
+    </section>
 
-    <h2>Misión institucional</h2>
-    <p class="justificado">El MINEDUC busca brindar oportunidades de aprendizaje con una gestión organizada, eficiente y orientada a resultados, que contribuya a una Guatemala mejor.</p>
-    <h2>Visión institucional</h2>
-    <p class="justificado">El MINEDUC aspira a formar ciudadanos con carácter, autonomía para aprender, identidad guatemalteca y desarrollo integral basado en principios y valores.</p>
-    <p class="fuente">Síntesis de la <a href="https://www.mineduc.gob.gt/mineduc/es/quienessomos/misionvisionobjetivo" target="_blank" rel="noopener noreferrer">Misión, Visión y Objetivos del MINEDUC</a>.</p>
+    <section class="identidad-distrito" aria-label="Misión y visión institucional">
+        <article class="tarjeta-identidad">
+            <h2>Misión institucional</h2>
+            <p class="justificado">El MINEDUC busca brindar oportunidades de aprendizaje con una gestión organizada, eficiente y orientada a resultados, que contribuya a una Guatemala mejor.</p>
+        </article>
+        <article class="tarjeta-identidad">
+            <h2>Visión institucional</h2>
+            <p class="justificado">El MINEDUC aspira a formar ciudadanos con carácter, autonomía para aprender, identidad guatemalteca y desarrollo integral basado en principios y valores.</p>
+        </article>
+        <p class="fuente fuente-identidad">Síntesis de la <a href="https://www.mineduc.gob.gt/mineduc/es/quienessomos/misionvisionobjetivo" target="_blank" rel="noopener noreferrer">Misión, Visión y Objetivos del MINEDUC</a>.</p>
+    </section>
 
-    <h2>Valores</h2>
-    <p class="justificado">La Coordinación Distrital SINAE, Distrito Escolar 16-01-0923 Cobán, Alta Verapaz fomenta los siguientes valores: responsabilidad, disciplina, puntualidad y honestidad, con la finalidad de cumplir las leyes, acuerdos y demás disposiciones. (E. Caal, comunicación personal, 5 de marzo de 2026).</p>
-        
+    <section class="valores-distrito" aria-labelledby="titulo-valores">
+        <div>
+            <span class="etiqueta-distrito">Nuestro trabajo</span>
+            <h2 id="titulo-valores">Valores</h2>
+            <p>La Coordinación Distrital SINAE del Distrito Escolar 16-01-0923, Cobán, Alta Verapaz, fomenta estos valores para cumplir las leyes, acuerdos y demás disposiciones.</p>
+        </div>
+        <ul class="lista-valores" aria-label="Valores de la Coordinación Distrital">
+            <li>Responsabilidad</li>
+            <li>Disciplina</li>
+            <li>Puntualidad</li>
+            <li>Honestidad</li>
+        </ul>
+        <p class="fuente">E. Caal, comunicación personal, 5 de marzo de 2026.</p>
+    </section>
 </main>
 <script src="script.js"></script>
 </body>

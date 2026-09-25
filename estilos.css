@@ -24,19 +24,30 @@ h3 {
 }
 
 nav {
-    background-color: #1a3d6d;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    background-color: #eaf1f9;
+    padding: 8px 18px 12px;
+}
+
+.menu-enlaces {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav a {
-    color: rgb(234, 224, 224);
+    color: #1a3d6d;
     text-decoration: none;
     margin-right: 10px;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 nav a:hover {
-    color: #ffe9a8;
+    color: #2e6dbf;
     text-decoration: underline;
 }
 
@@ -51,13 +62,13 @@ p {
 }
 nav a.activo {
     text-decoration: underline;
-    color: #ffffff;
+    color: #1a3d6d;
 }
 .menu-boton {
     display: none;
     background: none;
-    border: 2px solid white;
-    color: white;
+    border: 2px solid #1a3d6d;
+    color: #1a3d6d;
     font-size: 24px;
     padding: 5px 12px;
     border-radius: 5px;
@@ -79,23 +90,54 @@ nav a.activo {
         .separador {
         display: none;
     }
-     .menu-boton {
+    nav {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        grid-template-areas:
+            ". logo toggle"
+            "links links links";
+        align-items: center;
+        gap: 6px 12px;
+        padding: 6px 12px 10px;
+    }
+
+    .menu-boton {
+        grid-area: toggle;
         display: inline-block;
+        justify-self: end;
+        margin: 0;
     }
 
     .menu-enlaces {
+        grid-area: links;
         display: none;
-        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-self: stretch;
+        padding: 4px 0 8px;
     }
 
     .menu-enlaces.abierto {
-        display: block;
+        display: flex;
     }
 }
 .logo-nav {
-    height: 40px;
-    vertical-align: middle;
-    margin-right: 15px;
+    display: block;
+    grid-area: logo;
+    width: 200px;
+    height: 100px;
+    max-width: min(200px, 58vw);
+    padding: 0;
+    justify-self: center;
+    background: transparent;
+    object-fit: contain;
+}
+
+@media (max-width: 600px) {
+    .logo-nav {
+        width: 170px;
+        height: 84px;
+    }
 }
 .foto-actividades {
     width: 100%;
@@ -401,6 +443,116 @@ ul {
     padding-bottom: 48px;
 }
 
+.pagina-distrito {
+    padding-top: 34px;
+    padding-bottom: 48px;
+}
+
+.encabezado-distrito {
+    max-width: 680px;
+    margin-bottom: 28px;
+}
+
+.encabezado-distrito h1 {
+    margin: 6px 0 10px;
+}
+
+.encabezado-distrito p {
+    color: #4b5563;
+}
+
+.etiqueta-distrito {
+    color: #2e6dbf;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.proposito-distrito {
+    margin: 26px 0 32px;
+    padding: 20px 24px;
+    border-left: 5px solid #2e6dbf;
+    border-radius: 10px;
+    background: #eaf1f9;
+}
+
+.proposito-distrito h2,
+.tarjeta-identidad h2,
+.valores-distrito h2 {
+    margin: 0 0 10px;
+    color: #1a3d6d;
+}
+
+.proposito-distrito p:last-child {
+    margin-bottom: 0;
+}
+
+.identidad-distrito {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.tarjeta-identidad {
+    padding: 20px;
+    border: 1px solid #d5deea;
+    border-top: 4px solid #2e6dbf;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.tarjeta-identidad p {
+    margin-bottom: 0;
+}
+
+.fuente-identidad {
+    grid-column: 1 / -1;
+    margin: -8px 0 0;
+}
+
+.valores-distrito {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 12px 24px;
+    padding: 22px 24px;
+    border: 1px solid #d5deea;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.valores-distrito h2 {
+    margin-top: 4px;
+}
+
+.valores-distrito p {
+    margin: 0;
+}
+
+.lista-valores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lista-valores li {
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: #eaf1f9;
+    color: #1a3d6d;
+    font-weight: 700;
+}
+
+.valores-distrito .fuente {
+    grid-column: 1 / -1;
+}
+
 .encabezado-servicios {
     max-width: 680px;
     margin-bottom: 30px;
@@ -573,5 +725,23 @@ ul {
         grid-template-columns: 1fr;
         gap: 18px;
         padding: 22px;
+    }
+
+    .identidad-distrito {
+        grid-template-columns: 1fr;
+    }
+
+    .fuente-identidad {
+        grid-column: auto;
+        margin-top: 0;
+    }
+
+    .valores-distrito {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .lista-valores {
+        justify-content: flex-start;
     }
 }
