@@ -18,34 +18,64 @@
     <a href="actividades.html">Actividades</a> 
     </div>
 </nav>
-<div class="contenedor">
-    <h1>Supervisión Educativa Distrito Escolar 16-01-0923</h1>
-    <h2>Coordinador Distrital: Efraín Caal Cuc</h2> 
-    <p>Bienvenido a Distrito, el espacio donde encontrarás información sobre gestiones, actividades y servicios que ofrece el distrito educativo.</p>
-    <h3>¿Qué encontrarás aquí?</h3>
-    <hr class="separador-seccion"> 
-    <ul>
-        <li>Gestiones administrativas</li>
-        <li>Actividades del distrito</li>
-        <li>Servicios que prestamos</li>
-        <li>Mapa de escuelas</li>
-    </ul>
-    <p>Explora las secciones y mantente informado.</p>
-   <div class="letrero">
-    <h2>Últimas noticias</h2>
+<main class="contenedor pagina-inicio">
+    <header class="portada-inicio">
+        <span class="etiqueta-inicio">Cobán, Alta Verapaz</span>
+        <h1>Supervisión Educativa Distrito Escolar 16-01-0923</h1>
+        <p>Bienvenido al espacio de la Coordinación Distrital SINAE: encuentra información sobre gestiones, servicios y actividades de la comunidad educativa.</p>
+        <p class="coordinador-inicio"><strong>Coordinador Distrital:</strong> Efraín Caal Cuc</p>
+    </header>
 
-<ul class="lista-noticias">
-    <li data-fecha="2026-09-22">
-        <span class="badge" hidden>NUEVO</span>
-        <a href="entradas/entrada1.html">Actividades pendientes del distrito</a>
-    </li>
-</ul>
-   </div>
-       <hr class="separador-seccion"> 
-    <h2>Mapa de escuelas</h2>
-    <p>Ubicación de las escuelas del Distrito 16-01-0923 en Cobán, Alta Verapaz.</p>
-    <iframe title="Mapa de escuelas del Distrito 16-01-0923" src="https://www.google.com/maps/d/u/0/embed?mid=1ijt9TqT2Uchb1aQgTsOJZwyH6f_PP6E&ehbc=2E312F" class="mapa-embed" style="border:0;"></iframe>
-</div> 
+    <section class="accesos-inicio" aria-labelledby="titulo-accesos">
+        <div class="encabezado-accesos">
+            <h2 id="titulo-accesos">Explora el distrito</h2>
+            <p>Accede directamente a la información que necesitas.</p>
+        </div>
+        <div class="tarjetas-acceso">
+            <a class="tarjeta-acceso" href="distrito.html">
+                <span class="numero-acceso" aria-hidden="true">01</span>
+                <h3>El Distrito</h3>
+                <p>Conoce el propósito, la misión, la visión y los valores de la coordinación.</p>
+                <span class="enlace-acceso">Conocer más <span aria-hidden="true">→</span></span>
+            </a>
+            <a class="tarjeta-acceso" href="servicios.html">
+                <span class="numero-acceso" aria-hidden="true">02</span>
+                <h3>Servicios</h3>
+                <p>Consulta el acompañamiento y la orientación para la comunidad educativa.</p>
+                <span class="enlace-acceso">Ver servicios <span aria-hidden="true">→</span></span>
+            </a>
+            <a class="tarjeta-acceso" href="actividades.html">
+                <span class="numero-acceso" aria-hidden="true">03</span>
+                <h3>Actividades</h3>
+                <p>Recorre las galerías de acompañamiento, supervisión y participación escolar.</p>
+                <span class="enlace-acceso">Ver actividades <span aria-hidden="true">→</span></span>
+            </a>
+        </div>
+    </section>
+
+    <section class="noticias-inicio" aria-labelledby="titulo-noticias">
+        <div>
+            <span class="etiqueta-inicio">Información reciente</span>
+            <h2 id="titulo-noticias">Últimas noticias</h2>
+        </div>
+        <ul class="lista-noticias">
+            <li data-fecha="2026-09-22">
+                <span class="badge" hidden>NUEVO</span>
+                <a href="entradas/entrada1.html">Actividades pendientes del distrito</a>
+                <span class="flecha-noticia" aria-hidden="true">→</span>
+            </li>
+        </ul>
+    </section>
+
+    <section class="seccion-mapa-inicio" id="mapa-escuelas" aria-labelledby="titulo-mapa">
+        <div class="encabezado-mapa-inicio">
+            <span class="etiqueta-inicio">Ubicación</span>
+            <h2 id="titulo-mapa">Mapa de escuelas</h2>
+            <p>Ubicación de las escuelas del Distrito 16-01-0923 en Cobán, Alta Verapaz.</p>
+        </div>
+        <iframe title="Mapa de escuelas del Distrito 16-01-0923" src="https://www.google.com/maps/d/u/0/embed?mid=1ijt9TqT2Uchb1aQgTsOJZwyH6f_PP6E&ehbc=2E312F" class="mapa-embed" style="border:0;" loading="lazy"></iframe>
+    </section>
+</main>
 <script src="script.js"></script>
 </body>
     </html>
