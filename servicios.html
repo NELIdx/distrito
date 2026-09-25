@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios a ofrecer</title>
+    <title>Servicios educativos | Distrito Escolar 16-01-0923</title>
+    <meta name="description" content="Servicios de orientación, capacitación y acompañamiento para centros educativos, docentes y familias del Distrito 16-01-0923.">
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <nav>
     <img src="imagenes/logo.png" alt="Logo del Distrito Escolar 16-01-0923" class="logo-nav">
-    <button id="menu-toggle" class="menu-boton">☰</button>
+    <button id="menu-toggle" class="menu-boton" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-enlaces">☰</button>
     <div id="menu-enlaces" class="menu-enlaces"> 
     <a href="index.html">Inicio</a> <span class="separador">|</span>
     <a href="distrito.html">El Distrito</a> <span class="separador">|</span>
@@ -17,52 +18,71 @@
     <a href="actividades.html">Actividades</a>
     </div>
     </nav>
-<div class="contenedor">
-    <h1>Servicios</h1>
-    <p> A todos los sectores educativos bajo esta jurisdicción se ofrecen diversos servicios para promover y garantizar la calidad en la educación.</p>
-    <p>Los servicios ofrecidos están dirigidos a los siguientes sectores:</p>
+<main class="contenedor pagina-servicios">
+    <header class="encabezado-servicios">
+        <h1>Servicios educativos</h1>
+        <p>La Coordinación Distrital ofrece orientación y apoyo a los centros educativos públicos y privados, así como a las familias de la comunidad educativa.</p>
+    </header>
 
-    <div class="letrero">
-    <h2>Sector público</h2>
-    </div>
-    <div class="flecha">↓</div> 
-   <div class="parrafo">   
-    <ul>
-        <li>Asesoría y orientación educativa</li>
-        <li>Capacitación docente</li>
-        <li>Supervisión de instituciones educativas</li>
-        <li>Programas de apoyo a estudiantes</li>
-        <li>Resolución de casos</li>
-        <li>Recepción de Kardex</li>
-    </ul>
-    </div>
-    <div class="letrero">
-    <h2>Sector privado</h2>
-    </div>
-    <div class="flecha">↓</div>
-    <div class="parrafo">
-    <ul>
-        <li>Capacitación docente</li>
-        <li>Asesoría y orientación educativa</li>
-        <li>Actividades extracurriculares y culturales</li>
-        <li>Resolución de casos</li>
-        <li>Revisión de políticas educativas</li>
-        <li>Consultoría educativa</li>
-    </ul>
-    </div>
-    <div class="letrero">
-    <h2>Padres de familia</h2>
-    </div>
-    <div class="flecha">↓</div>
-    <div class="parrafo">
-    <ul>
-        <li>Orientación sobre el proceso educativo</li>
-        <li>Participación en actividades escolares</li>
-        <li>Asesoría sobre derechos y responsabilidades</li>
-        <li>Apoyo en resolución de problemas</li>
-    </ul>
-    </div>
-</div>
+    <section class="servicios-comunes" aria-labelledby="titulo-comunes">
+        <div>
+            <p class="etiqueta-servicios">Para centros educativos</p>
+            <h2 id="titulo-comunes">Servicios para ambos sectores</h2>
+            <p>Estos servicios están dirigidos a centros educativos públicos y privados.</p>
+        </div>
+        <ul class="lista-comunes">
+            <li>Asesoría y orientación educativa</li>
+            <li>Capacitación docente</li>
+            <li>Resolución de casos</li>
+        </ul>
+    </section>
+
+    <section aria-labelledby="titulo-sectores">
+        <div class="encabezado-sectores">
+            <h2 id="titulo-sectores">Servicios según el público</h2>
+            <p>Selecciona una tarjeta para mostrar u ocultar sus servicios.</p>
+        </div>
+
+        <div class="tarjetas-servicios">
+            <details class="tarjeta-servicio" open>
+                <summary>
+                    <span class="titulo-tarjeta">Sector público</span>
+                    <span class="cantidad-servicios">3 servicios específicos</span>
+                </summary>
+                <ul>
+                    <li>Supervisión de instituciones educativas</li>
+                    <li>Programas de apoyo a estudiantes</li>
+                    <li>Recepción de Kardex</li>
+                </ul>
+            </details>
+
+            <details class="tarjeta-servicio" open>
+                <summary>
+                    <span class="titulo-tarjeta">Sector privado</span>
+                    <span class="cantidad-servicios">3 servicios específicos</span>
+                </summary>
+                <ul>
+                    <li>Actividades extracurriculares y culturales</li>
+                    <li>Revisión de políticas educativas</li>
+                    <li>Consultoría educativa</li>
+                </ul>
+            </details>
+
+            <details class="tarjeta-servicio" open>
+                <summary>
+                    <span class="titulo-tarjeta">Padres de familia</span>
+                    <span class="cantidad-servicios">4 servicios</span>
+                </summary>
+                <ul>
+                    <li>Orientación sobre el proceso educativo</li>
+                    <li>Participación en actividades escolares</li>
+                    <li>Asesoría sobre derechos y responsabilidades</li>
+                    <li>Apoyo en la resolución de problemas</li>
+                </ul>
+            </details>
+        </div>
+    </section>
+</main>
 <script src="script.js"></script>
 </body>
 </html>

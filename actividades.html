@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividades que se realizan</title>
+    <title>Actividades | Distrito Escolar 16-01-0923</title>
+    <meta name="description" content="Conoce las actividades de supervisión, capacitación, cultura y convivencia del Distrito Escolar 16-01-0923.">
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <nav>
     <img src="imagenes/logo.png" alt="Logo del Distrito Escolar 16-01-0923" class="logo-nav">
-        <button id="menu-toggle" class="menu-boton">☰</button>
+        <button id="menu-toggle" class="menu-boton" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-enlaces">☰</button>
     <div id="menu-enlaces" class="menu-enlaces">
     <a href="index.html">Inicio</a> <span class="separador">|</span>
     <a href="distrito.html">El Distrito</a> <span class="separador">|</span>
@@ -17,36 +18,141 @@
     <a href="actividades.html">Actividades</a>
     </div>
     </nav>
-<div class="contenedor">
+<main class="contenedor actividades">
     <h1>Actividades del Distrito 16-01-0923</h1>
-    <h2>Actividades a realizar</h2>
-    <h3>Supervisión de escuelas</h3>
-    <p>Se realizan visitas periódicas para evaluar el desempeño académico y administrativo de las escuelas del distrito.</p>
-    <h3>Capacitación y talleres a docentes</h3>
-    <p>Se gestionan programas de capacitación continuada para mejorar las competencias pedagógicas de los docentes.</p>
+    <p>Recorre las galerías para conocer el trabajo de acompañamiento, supervisión y participación de la comunidad educativa.</p>
+    <p class="ayuda-galeria">Desliza las fotos o usa las flechas para recorrer cada galería. Toca una foto para ampliarla.</p>
 
-    <div class="galeria">
-    <img src="imagenes/capacitacion-2.jpeg" alt="Imagen de capacitación" class="foto-actividades"> 
-    <img src="imagenes/capacitacion-4.jpeg" alt="Imagen de capacitación" class="foto-actividades">
-    <img src="imagenes/capacitacion.jpeg" alt="Imagen de capacitación" class="foto-actividades">
-    </div>
-    
-    <h3>Participación en eventos culturales</h3>
-    <p>Se colabora en festividades y actividades culturales que promueven el intercambio y la diversidad.</p>
-    <h3>Reuniones</h3>
-    <p>Se organizan reuniones periódicas con directivos, docentes y autoridades para discutir temas relevantes.</p>
-    <div class="galeria">
-    <img src="imagenes/reunion-5.jpeg" alt="Imagen de reuniones" class="foto-actividades">
-    <img src="imagenes/reunion-2.jpeg" alt="Imagen de reuniones" class="foto-actividades">
-    <img src="imagenes/reunion-4.jpeg" alt="Imagen de reuniones" class="foto-actividades">
-    </div>
-    <h3>Juegos magisteriales</h3> 
-    <p>Se organizan competencias deportivas y culturales para fomentar el espíritu de equipo y la participación docente.</p>
-    <div class="galeria">
-    <img src="imagenes/juegos.jpeg" alt="Imagen de juegos magisteriales" class="imagen-juegos">
-    </div>
-</div>
-<div id ="lightbox" class="lightbox">
+    <section class="actividad">
+        <h2>Acompañamiento educativo</h2>
+        <p>Visitas y apoyo a las comunidades educativas del distrito.</p>
+        <div class="carrusel" aria-label="Galería de acompañamiento educativo">
+            <button class="carrusel-control anterior" type="button" aria-label="Ver imágenes anteriores de acompañamiento">‹</button>
+            <div class="carrusel-ventana" tabindex="0" role="region" aria-label="Fotos de acompañamiento educativo">
+                <div class="galeria carrusel-pista">
+                    <figure class="foto-caja"><img src="imagenes/acompañamiento 1.jpeg" alt="Acompañamiento educativo, imagen 1" class="foto-actividades"><figcaption class="foto-descripcion">Acompañamiento a EOUM Barrio San Marcos en CREOMPAZ</figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/acompañamiento 2.jpeg" alt="Acompañamiento educativo, imagen 2" class="foto-actividades"><figcaption class="foto-descripcion">Presentación de la actividad</figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/acompañamiento 3.jpeg" alt="Acompañamiento educativo, imagen 3" class="foto-actividades"><figcaption class="foto-descripcion">Acompañamiento en la escuela INEB Central simulacro por sismos</figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/acompañamiento 4.jpeg" alt="Acompañamiento educativo, imagen 4" class="foto-actividades"><figcaption class="foto-descripcion">Presentación de la actividad</figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/acompañamiento 5.jpeg" alt="Acompañamiento educativo, imagen 5" class="foto-actividades"><figcaption class="foto-descripcion">Jurado de oposición</figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/acompañamiento 8.jpeg" alt="Acompañamiento educativo, imagen 8" class="foto-actividades"><figcaption class="foto-descripcion">Acompañamiento educativo</figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/acompañamiento 9.jpeg" alt="Acompañamiento educativo, imagen 9" class="foto-actividades"><figcaption class="foto-descripcion">Acompañamiento en reunción interna de EOUN No 1. Felipa Gómez JM.</figcaption></figure>
+                </div>
+            </div>
+            <button class="carrusel-control siguiente" type="button" aria-label="Ver imágenes siguientes de acompañamiento">›</button>
+            <p class="carrusel-estado" aria-live="polite"></p>
+        </div>
+    </section>
+
+    <section class="actividad">
+        <h2>Supervisión escolar</h2>
+        <p>Visitas de supervisión en oficina y a centros educativos del distrito</p>
+        <div class="carrusel" aria-label="Galería de supervisión escolar">
+            <button class="carrusel-control anterior" type="button" aria-label="Ver imágenes anteriores de supervisión">‹</button>
+            <div class="carrusel-ventana" tabindex="0" role="region" aria-label="Fotos de supervisión escolar">
+                <div class="galeria carrusel-pista">
+                    <figure class="foto-caja"><img src="imagenes/supervisión 1.jpeg" alt="Supervisión escolar, imagen 1" class="foto-actividades"><figcaption class="foto-descripcion">Supervisión de CGC</figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/supervisión 2.jpeg" alt="Supervisión escolar, imagen 2" class="foto-actividades"><figcaption class="foto-descripcion">Supervisión escolar</figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/supervisión 3.jpeg" alt="Supervisión escolar, imagen 3" class="foto-actividades"><figcaption class="foto-descripcion">Supervisión escolar</figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/supervisión 4.jpeg" alt="Supervisión escolar, imagen 4" class="foto-actividades"><figcaption class="foto-descripcion">Supervisión escolar</figcaption></figure>
+                </div>
+            </div>
+            <button class="carrusel-control siguiente" type="button" aria-label="Ver imágenes siguientes de supervisión">›</button>
+            <p class="carrusel-estado" aria-live="polite"></p>
+        </div>
+    </section>
+
+    <section class="actividad">
+        <h2>Capacitaciónes al Supervisor Educativo y personal docente</h2>
+        <p>Talleres y espacios de formación para fortalecer la labor docente.</p>
+        <div class="carrusel" aria-label="Galería de capacitación docente">
+            <button class="carrusel-control anterior" type="button" aria-label="Ver imágenes anteriores de capacitación">‹</button>
+            <div class="carrusel-ventana" tabindex="0" role="region" aria-label="Fotos de capacitación docente">
+                <div class="galeria carrusel-pista">
+                    <figure class="foto-caja"><img src="imagenes/capacitacion.jpeg" alt="Capacitación docente, imagen 1" class="foto-actividades"><figcaption class="foto-descripcion">Taller a docentes de la EOUV No. 2 Salvador de Oliva JV.</figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/capacitacion-2.jpeg" alt="Capacitación docente, imagen 2" class="foto-actividades"><figcaption class="foto-descripcion">Presentación de la actividad</figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/capacitacion-4.jpeg" alt="Capacitación docente, imagen 4" class="foto-actividades"><figcaption class="foto-descripcion">Taller de capacitación a docentes de la EOUM Barrio San Marcos</figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/capacitacion-6.jpeg" alt="Capacitación docente, imagen 5" class="foto-actividades"><figcaption class="foto-descripcion">Taller capacitación a directores del sector público y privado</figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/capacitacion-7.jpeg" alt="Capacitación docente, imagen 6" class="foto-actividades"><figcaption class="foto-descripcion">Taller a directores del tema Nivelación de los aprendizajes</figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/capacitacion-8.jpeg" alt="Capacitación docente, imagen 7" class="foto-actividades"><figcaption class="foto-descripcion">Taller a supervisores educativos</figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/acompañamiento 6.jpeg" alt="Acompañamiento educativo, imagen 6" class="foto-actividades"><figcaption class="foto-descripcion">Taller de trabajo infantil</figcaption></figure>
+                     <figure class="foto-caja"><img src="imagenes/acompañamiento 7.jpeg" alt="Acompañamiento educativo, imagen 7" class="foto-actividades"><figcaption class="foto-descripcion">Presentación de la actividad</figcaption></figure>
+                </div>
+            </div>
+            <button class="carrusel-control siguiente" type="button" aria-label="Ver imágenes siguientes de capacitación">›</button>
+            <p class="carrusel-estado" aria-live="polite"></p>
+        </div>
+    </section>
+
+    <section class="actividad">
+        <h2>Actividades culturales</h2>
+        <p>Participación en actividades que promueven el intercambio y la diversidad cultural.</p>
+        <div class="carrusel" aria-label="Galería de actividades culturales">
+            <button class="carrusel-control anterior" type="button" aria-label="Ver imágenes anteriores de actividades culturales">‹</button>
+            <div class="carrusel-ventana" tabindex="0" role="region" aria-label="Fotos de actividades culturales">
+                <div class="galeria carrusel-pista">
+                    <figure class="foto-caja"><img src="imagenes/actividades culturales 1.jpeg" alt="Actividad cultural, imagen 1" class="foto-actividades"><figcaption class="foto-descripcion">Elección Niña Ratzum Tzoleb´al </figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/actividades culturales 2.jpeg" alt="Actividad cultural, imagen 2" class="foto-actividades"><figcaption class="foto-descripcion">Presentación de la actividad</figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/actividades culturales 3.jpeg" alt="Actividad cultural, imagen 3" class="foto-actividades"><figcaption class="foto-descripcion">Acto civico en conmemoración a la estatua de Manuel Tot </figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/actividades culturales 4.jpeg" alt="Actividad cultural, imagen 4" class="foto-actividades"><figcaption class="foto-descripcion">Acto civico día del Quetzal por EODP Federico Froebel</figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/actividades culturales 5.jpeg" alt="Actividad cultural, imagen 5" class="foto-actividades"><figcaption class="foto-descripcion">Elección de Reina Infantil Cobán</figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/acompañamiento 10.jpeg" alt="Acompañamiento educativo, imagen 10" class="foto-actividades"><figcaption class="foto-descripcion">Presentación de la actividad</figcaption></figure>
+                </div>
+            </div>
+            <button class="carrusel-control siguiente" type="button" aria-label="Ver imágenes siguientes de actividades culturales">›</button>
+            <p class="carrusel-estado" aria-live="polite"></p>
+        </div>
+    </section>
+
+    <section class="actividad">
+        <h2>Organización comunitaria</h2>
+        <p>Acciones de organización y coordinación con la comunidad educativa.</p>
+        <div class="carrusel" aria-label="Galería de organización comunitaria">
+            <button class="carrusel-control anterior" type="button" aria-label="Ver imágenes anteriores de organización">‹</button>
+            <div class="carrusel-ventana" tabindex="0" role="region" aria-label="Fotos de organización comunitaria">
+                <div class="galeria carrusel-pista">
+                    <figure class="foto-caja"><img src="imagenes/organización 1.jpeg" alt="Organización comunitaria, imagen 1" class="foto-actividades"><figcaption class="foto-descripcion">Organización comunitaria</figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/organización 2.jpeg" alt="Organización comunitaria, imagen 2" class="foto-actividades"><figcaption class="foto-descripcion">Organización comunitaria</figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/reunion-6.jpeg" alt="Reunión educativa, imagen 6" class="foto-actividades"><figcaption class="foto-descripcion">Reunión de coordinación</figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/reunion-7.jpeg" alt="Reunión educativa, imagen 7" class="foto-actividades"><figcaption class="foto-descripcion">Reunión de coordinación</figcaption></figure>
+                </div>
+            </div>
+            <button class="carrusel-control siguiente" type="button" aria-label="Ver imágenes siguientes de organización">›</button>
+            <p class="carrusel-estado" aria-live="polite"></p>
+        </div>
+    </section>
+
+    <section class="actividad">
+        <h2>Reuniones de coordinación</h2>
+        <p>Espacios de trabajo con directivos, docentes y autoridades educativas.</p>
+        <div class="carrusel" aria-label="Galería de reuniones de coordinación">
+            <button class="carrusel-control anterior" type="button" aria-label="Ver imágenes anteriores de reuniones">‹</button>
+            <div class="carrusel-ventana" tabindex="0" role="region" aria-label="Fotos de reuniones de coordinación">
+                <div class="galeria carrusel-pista">
+                    <figure class="foto-caja"><img src="imagenes/reunion.jpeg" alt="Reunión educativa, imagen 1" class="foto-actividades"><figcaption class="foto-descripcion">Reunión de coordinación a directores  de centros educativos públicos y privados</figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/reunion-8.jpeg" alt="Reunión educativa, imagen 8" class="foto-actividades"><figcaption class="foto-descripcion">Reunión de coordinación</figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/reunion-9.jpeg" alt="Reunión educativa, imagen 9" class="foto-actividades"><figcaption class="foto-descripcion">Reunión de coordinación</figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/reunion-10.jpeg" alt="Reunión educativa, imagen 10" class="foto-actividades"><figcaption class="foto-descripcion">Reunión de coordinación</figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/reunion-11.jpeg" alt="Reunión educativa, imagen 11" class="foto-actividades"><figcaption class="foto-descripcion">Reunión de coordinación</figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/reunion-12.jpeg" alt="Reunión educativa, imagen 12" class="foto-actividades"><figcaption class="foto-descripcion">Reunión de coordinación</figcaption></figure>
+                    <figure class="foto-caja"><img src="imagenes/reunion-13.jpeg" alt="Reunión educativa, imagen 13" class="foto-actividades"><figcaption class="foto-descripcion">Reunión de coordinación</figcaption></figure>
+                </div>
+            </div>
+            <button class="carrusel-control siguiente" type="button" aria-label="Ver imágenes siguientes de reuniones">›</button>
+            <p class="carrusel-estado" aria-live="polite"></p>
+        </div>
+    </section>
+
+    <section class="actividad">
+        <h2>Juegos magisteriales</h2>
+        <p>Competencias para fomentar la convivencia y la participación docente.</p>
+        <div class="galeria">
+            <figure class="foto-caja"><img src="imagenes/juegos.jpeg" alt="Juegos magisteriales del distrito" class="imagen-juegos"><figcaption class="foto-descripcion">Juegos magisteriales</figcaption></figure>
+        </div>
+    </section>
+</main>
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Vista ampliada de la imagen" aria-hidden="true">
+    <button id="lightbox-cerrar" class="lightbox-cerrar" type="button" aria-label="Cerrar imagen ampliada">×</button>
     <img id="lightbox-img" src="" alt="Imagen ampliada">
 </div>
     <script src="script.js"></script>
